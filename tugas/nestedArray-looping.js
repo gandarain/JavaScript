@@ -1,12 +1,8 @@
 function panggilNestedArray(value){
-  var hasil = [[""]]
+  var hasil = []
 
-  for ( i=0; i<value.length+1; i++ )
-  {
-    for ( j=0; j<value.length; j++ )
-    {
-      hasil[i] += value[j]
-    }
+  for ( i=0; i<value.length+1; i++ ){
+    hasil.push([value[0][i], value[1][i], value[2][i]])
   }
   return hasil
 }
